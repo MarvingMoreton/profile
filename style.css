@@ -1,0 +1,150 @@
+/**************************/
+/*  GENERAL REUSABLE COMPONENTS  */
+/**************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+  background-color: #141a31;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  margin: 0.8rem;
+  font-size: 1.4rem;
+  color: #575f7d;
+}
+h1 {
+  font-weight: bold;
+  text-align: center;
+  color: #1F2235;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+H2 {
+color: #1F2235;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+p{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+.container {
+  margin: 4rem auto;
+  width: 70rem;
+  display: block;
+  }
+
+
+.btn-orange,
+.btn-orange:link,
+.btn-orange:visited {
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: 'lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 12px;
+  color:black;
+  background-color: #fab874;
+  border: none;
+
+
+  /* trick annimation btn with CSS */
+  transition: all 0.3s;
+}
+
+.btn-orange,
+.btn-orange:hover,
+.btn-orange:active{
+  color: #fab874;
+  background-color: rgb(64, 63, 111);
+}
+
+/**************************/
+/*  STYLE COMPONENTS  */
+/**************************/
+
+/* header box */
+.header-paragraph{
+  padding-top: 1.4rem;
+  }
+/* Follow-me box */
+
+.image-podcast {
+  width: 25%;
+  }
+
+.social-icon-link{
+  color: rgb(64, 63, 111);
+  width: 100%;
+  display: flex;
+}
+
+.social-icon {
+  font-size: 4.8rem;
+}
+
+.social-box{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-white{
+  background-color: white;
+  padding: 4rem;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 0.4rem;
+  margin: 2rem 0px;
+  text-align: center;
+}
+
+
+/**************************/
+/*  MEDIA QUERIES  */
+/**************************/
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
